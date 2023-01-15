@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #252525;
+}
+
+.container {
+  width: 600px;
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.todo-header {
+  text-align: center;
+  margin-top: 20px;
+}
+.todo-header .title {
+  color: #f3f4f8;
+  font-size: 3rem;
+  letter-spacing: 5px;
+}
+.todo-header .todoInput-wrapper {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  margin-top: 20px;
+}
+.todo-header .todoInput-wrapper .todoInput {
+  width: 80%;
+  background: #f3f4f8;
+  border: none;
+  outline: none;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+.todo-header .todoInput-wrapper .todoInput:hover {
+  cursor: pointer;
+}
+.todo-header .todoInput-wrapper .todoButton {
+  width: 120px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: #f3f4f8;
+  font-weight: bold;
+  color: #252525;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.todo-header .todoInput-wrapper .todoButton:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.todo-body {
+  padding: 10px;
+  margin: 20px 0;
+}
+.todo-body .inputFilter {
+  padding: 12px;
+  border: none;
+  outline: none;
+  width: 300px;
+  border-radius: 5px;
+}
+.todo-body .todoLists-wrapper {
+  margin: 20px 0;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.todo-body .todoLists-wrapper .todo-box {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  background: #f3f4f8;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+.todo-body .todoLists-wrapper .todo-box .todoText {
+  width: 80%;
+}
+.todo-body .todoLists-wrapper .todo-box .todoDone {
+  padding: 10px;
+  background-color: rgb(18, 158, 18);
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: #f3f4f8;
+  height: 35px;
+}
+
+@media (max-width: 420px) {
+  .container {
+    max-width: 360px;
+  }
+  .todo-header .title {
+    font-size: 2rem;
+  }
+  .todo-header .todoInput {
+    padding: 5px !important;
+  }
+  .todo-header .todoButton {
+    font-size: 0.8rem !important;
+  }
+  .todo-body .todoText {
+    padding: 5px;
+    font-size: 0.8rem !important;
+  }
+}/*# sourceMappingURL=app.css.map */
